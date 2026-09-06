@@ -5,1409 +5,1280 @@ function showTopic() {
 
     const topics = {
 
-        13: {
-            title: "Simultaneous Equations",
+        25: {
+            title: "Mensuration of Solids",
 
             lesson: `
                 <h3>Introduction</h3>
                 <p>
-                    Simultaneous equations are two or more equations involving two or more unknowns.
-                    The equations must be solved together because the values of the unknowns must satisfy
-                    all the equations at the same time.
+                    Mensuration of solids deals with measuring three-dimensional objects.
+                    Important measurements include surface area and volume.
                 </p>
 
-                <h3>Two Linear Simultaneous Equations</h3>
+                <h3>Cube</h3>
                 <p>
-                    A common form is:
-                    ax + by = c
-                    and
-                    dx + ey = f.
+                    A cube has six equal square faces.
                 </p>
-
-                <h3>Elimination Method</h3>
-                <p>
-                    The elimination method involves multiplying one or both equations where necessary
-                    so that the coefficient of one unknown becomes equal and opposite. The equations
-                    are then added or subtracted to eliminate that unknown.
-                </p>
-
-                <h3>Substitution Method</h3>
-                <p>
-                    Make one unknown the subject of one equation and substitute the resulting expression
-                    into the other equation.
-                </p>
-
-                <h3>Checking the Answer</h3>
-                <p>
-                    Always substitute the values obtained for x and y into both original equations.
-                    The values should satisfy both equations.
-                </p>
-
-                <h3>Applications</h3>
-                <p>
-                    Simultaneous equations can be used to solve problems involving ages, prices,
-                    numbers, dimensions and other quantities.
-                </p>
-            `,
-
-            examples: `
-                <h4>Example 1: Solve x + y = 10 and x - y = 2</h4>
-                <p>
-                    Add the equations:
-                    <br>x + y = 10
-                    <br>x - y = 2
-                </p>
-                <p>
-                    2x = 12
-                </p>
-                <p>
-                    x = 6
-                </p>
-                <p>
-                    Substitute into x + y = 10:
-                    6 + y = 10
-                </p>
-                <p>
-                    y = <strong>4</strong>
-                </p>
-
-                <h4>Example 2: Solve 2x + y = 11 and x + y = 7</h4>
-                <p>
-                    Subtract the second equation from the first:
-                </p>
-                <p>
-                    x = 4
-                </p>
-                <p>
-                    Substitute into x + y = 7:
-                    4 + y = 7.
-                </p>
-                <p>
-                    y = <strong>3</strong>
-                </p>
-
-                <h4>Example 3: Solve 3x + 2y = 16 and x + y = 6</h4>
-                <p>
-                    From x + y = 6:
-                    y = 6 - x.
-                </p>
-                <p>
-                    Substitute:
-                    3x + 2(6 - x) = 16.
-                </p>
-                <p>
-                    3x + 12 - 2x = 16.
-                </p>
-                <p>
-                    x = 4, therefore y = 2.
-                </p>
-                <p>
-                    Answer: <strong>x = 4, y = 2</strong>.
-                </p>
-            `,
-
-            practice: `
-                <ol>
-                    <li>Solve x + y = 12 and x - y = 4.</li>
-                    <li>Solve 2x + y = 9 and x + y = 6.</li>
-                    <li>Solve 3x + y = 13 and x + y = 7.</li>
-                    <li>Solve 2x + 3y = 13 and x + y = 5.</li>
-                    <li>Solve 3x + 2y = 12 and x + y = 5.</li>
-                    <li>Solve 4x + y = 17 and x - y = 3.</li>
-                    <li>Solve 5x + 2y = 19 and x + y = 5.</li>
-                    <li>The sum of two numbers is 20 and their difference is 6. Find them.</li>
-                    <li>Two pens and one book cost ₦700. One pen and one book cost ₦500. Find the cost of each.</li>
-                    <li>Check whether x = 4 and y = 3 satisfy 2x + y = 11.</li>
-                </ol>
-            `,
-
-            answers: `
-                <ol>
-                    <li>x = 8, y = 4</li>
-                    <li>x = 3, y = 3</li>
-                    <li>x = 3, y = 4</li>
-                    <li>x = 2, y = 3</li>
-                    <li>x = 2, y = 3</li>
-                    <li>x = 4, y = 1</li>
-                    <li>x = 3, y = 2</li>
-                    <li>13 and 7</li>
-                    <li>Pen = ₦200, Book = ₦300</li>
-                    <li>Yes. 2(4) + 3 = 11.</li>
-                </ol>
-            `
-        },
-
-        14: {
-            title: "Quadratic Equations",
-
-            lesson: `
-                <h3>Meaning of a Quadratic Equation</h3>
-                <p>
-                    A quadratic equation is an equation whose highest power of the variable is 2.
-                    Its general form is:
-                    ax<sup>2</sup> + bx + c = 0, where a is not zero.
-                </p>
-
-                <h3>Methods of Solving Quadratic Equations</h3>
-                <ul>
-                    <li>Factorization</li>
-                    <li>Completing the square</li>
-                    <li>Quadratic formula</li>
-                </ul>
-
-                <h3>Solving by Factorization</h3>
-                <p>
-                    Rearrange the equation so that one side is zero. Factorize and use the
-                    zero-product rule.
-                </p>
-
-                <h3>Quadratic Formula</h3>
-                <p>
-                    For ax<sup>2</sup> + bx + c = 0:
-                </p>
-
-                <p>
-                    x = [-b ± √(b<sup>2</sup> - 4ac)] / 2a
-                </p>
-
-                <h3>Discriminant</h3>
-                <p>
-                    The expression b<sup>2</sup> - 4ac is called the discriminant.
-                </p>
-
-                <ul>
-                    <li>If it is positive, there are two real roots.</li>
-                    <li>If it is zero, there is one repeated real root.</li>
-                    <li>If it is negative, there are no real roots.</li>
-                </ul>
-            `,
-
-            examples: `
-                <h4>Example 1: Solve x<sup>2</sup> + 5x + 6 = 0</h4>
-                <p>
-                    Find two numbers whose product is 6 and sum is 5:
-                    2 and 3.
-                </p>
-                <p>
-                    (x + 2)(x + 3) = 0
-                </p>
-                <p>
-                    Therefore:
-                    <strong>x = -2 or x = -3</strong>.
-                </p>
-
-                <h4>Example 2: Solve x<sup>2</sup> - 9 = 0</h4>
-                <p>
-                    x<sup>2</sup> - 3<sup>2</sup> = 0
-                </p>
-                <p>
-                    (x - 3)(x + 3) = 0
-                </p>
-                <p>
-                    x = <strong>3 or -3</strong>.
-                </p>
-
-                <h4>Example 3: Solve 2x<sup>2</sup> + 7x + 3 = 0</h4>
-                <p>
-                    Factorize:
-                    (2x + 1)(x + 3) = 0.
-                </p>
-                <p>
-                    Therefore:
-                    x = <strong>-1/2 or -3</strong>.
-                </p>
-
-                <h4>Example 4: Solve x<sup>2</sup> - 4x - 5 = 0</h4>
-                <p>
-                    (x - 5)(x + 1) = 0.
-                </p>
-                <p>
-                    Therefore x = <strong>5 or -1</strong>.
-                </p>
-            `,
-
-            practice: `
-                <ol>
-                    <li>Solve x<sup>2</sup> + 7x + 12 = 0.</li>
-                    <li>Solve x<sup>2</sup> + 8x + 15 = 0.</li>
-                    <li>Solve x<sup>2</sup> - 25 = 0.</li>
-                    <li>Solve x<sup>2</sup> - 5x + 6 = 0.</li>
-                    <li>Solve x<sup>2</sup> + x - 6 = 0.</li>
-                    <li>Solve x<sup>2</sup> - 2x - 8 = 0.</li>
-                    <li>Solve 2x<sup>2</sup> + 5x + 2 = 0.</li>
-                    <li>Solve 3x<sup>2</sup> - 12x = 0.</li>
-                    <li>Find the discriminant of x<sup>2</sup> + 4x + 3 = 0.</li>
-                    <li>State the quadratic formula.</li>
-                </ol>
-            `,
-
-            answers: `
-                <ol>
-                    <li>x = -3 or -4</li>
-                    <li>x = -3 or -5</li>
-                    <li>x = 5 or -5</li>
-                    <li>x = 2 or 3</li>
-                    <li>x = 2 or -3</li>
-                    <li>x = 4 or -2</li>
-                    <li>x = -1/2 or -2</li>
-                    <li>x = 0 or 4</li>
-                    <li>4</li>
-                    <li>x = [-b ± √(b<sup>2</sup> - 4ac)] / 2a</li>
-                </ol>
-            `
-        },
-
-        15: {
-            title: "Variation",
-
-            lesson: `
-                <h3>Meaning of Variation</h3>
-                <p>
-                    Variation describes how one quantity changes in relation to another quantity.
-                    The main types studied are direct variation, inverse variation and joint variation.
-                </p>
-
-                <h3>Direct Variation</h3>
-                <p>
-                    If y varies directly as x, then:
-                    y = kx,
-                    where k is the constant of variation.
-                </p>
-
-                <h3>Inverse Variation</h3>
-                <p>
-                    If y varies inversely as x, then:
-                    y = k/x.
-                </p>
-
-                <h3>Joint Variation</h3>
-                <p>
-                    If y varies jointly as x and z, then:
-                    y = kxz.
-                </p>
-
-                <h3>Finding the Constant</h3>
-                <p>
-                    Substitute known values into the variation equation to find k.
-                    Then use k to find the required unknown.
-                </p>
-
-                <h3>Practical Examples</h3>
-                <p>
-                    Direct variation occurs when quantities increase together at a constant rate.
-                    Inverse variation occurs when one quantity increases while the other decreases.
-                </p>
-            `,
-
-            examples: `
-                <h4>Example 1: y varies directly as x. If y = 12 when x = 4, find y when x = 7.</h4>
-                <p>
-                    y = kx.
-                </p>
-                <p>
-                    12 = 4k, so k = 3.
-                </p>
-                <p>
-                    When x = 7:
-                    y = 3(7) = <strong>21</strong>.
-                </p>
-
-                <h4>Example 2: y varies inversely as x. If y = 6 when x = 4, find y when x = 8.</h4>
-                <p>
-                    y = k/x.
-                </p>
-                <p>
-                    6 = k/4, therefore k = 24.
-                </p>
-                <p>
-                    y = 24/8 = <strong>3</strong>.
-                </p>
-
-                <h4>Example 3: y varies directly as x<sup>2</sup>. If y = 20 when x = 2, find y when x = 3.</h4>
-                <p>
-                    y = kx<sup>2</sup>.
-                </p>
-                <p>
-                    20 = 4k, so k = 5.
-                </p>
-                <p>
-                    y = 5(9) = <strong>45</strong>.
-                </p>
-
-                <h4>Example 4: z varies jointly as x and y. If z = 24 when x = 3 and y = 4, find z when x = 5 and y = 2.</h4>
-                <p>
-                    z = kxy.
-                </p>
-                <p>
-                    24 = k(3)(4), so k = 2.
-                </p>
-                <p>
-                    z = 2(5)(2) = <strong>20</strong>.
-                </p>
-            `,
-
-            practice: `
-                <ol>
-                    <li>y varies directly as x. If y = 10 when x = 2, find k.</li>
-                    <li>y varies directly as x. If y = 15 when x = 5, find y when x = 8.</li>
-                    <li>y varies directly as x<sup>2</sup>. If y = 12 when x = 2, find k.</li>
-                    <li>Using question 3, find y when x = 4.</li>
-                    <li>y varies inversely as x. If y = 5 when x = 6, find k.</li>
-                    <li>Using question 5, find y when x = 10.</li>
-                    <li>z varies jointly as x and y. If z = 18 when x = 3 and y = 2, find k.</li>
-                    <li>Using question 7, find z when x = 5 and y = 4.</li>
-                    <li>If y = kx and k = 7, find y when x = 9.</li>
-                    <li>State the equation for inverse variation.</li>
-                </ol>
-            `,
-
-            answers: `
-                <ol>
-                    <li>k = 5</li>
-                    <li>24</li>
-                    <li>k = 3</li>
-                    <li>48</li>
-                    <li>k = 30</li>
-                    <li>3</li>
-                    <li>k = 3</li>
-                    <li>60</li>
-                    <li>63</li>
-                    <li>y = k/x</li>
-                </ol>
-            `
-        },
-
-        16: {
-            title: "Sequence and Series",
-
-            lesson: `
-                <h3>Sequence</h3>
-                <p>
-                    A sequence is an ordered list of numbers that follows a particular pattern.
-                    Each number in the sequence is called a term.
-                </p>
-
-                <h3>Arithmetic Sequence</h3>
-                <p>
-                    An arithmetic sequence has a constant difference between consecutive terms.
-                    The common difference is represented by d.
-                </p>
-
-                <p>
-                    The nth term is:
-                    <strong>T<sub>n</sub> = a + (n - 1)d</strong>
-                </p>
-
-                <h3>Geometric Sequence</h3>
-                <p>
-                    A geometric sequence has a constant ratio between consecutive terms.
-                    The common ratio is represented by r.
-                </p>
-
-                <p>
-                    The nth term is:
-                    <strong>T<sub>n</sub> = ar<sup>n-1</sup></strong>
-                </p>
-
-                <h3>Series</h3>
-                <p>
-                    A series is the sum of the terms of a sequence.
-                </p>
-
-                <h3>Sum of an Arithmetic Series</h3>
-                <p>
-                    S<sub>n</sub> = n/2 [2a + (n - 1)d].
-                </p>
-
-                <h3>Sum of a Geometric Series</h3>
-                <p>
-                    S<sub>n</sub> = a(r<sup>n</sup> - 1)/(r - 1), when r is not 1.
-                </p>
-            `,
-
-            examples: `
-                <h4>Example 1: Find the next three terms: 3, 7, 11, 15, ...</h4>
-                <p>
-                    Common difference = 4.
-                </p>
-                <p>
-                    Next terms = <strong>19, 23, 27</strong>.
-                </p>
-
-                <h4>Example 2: Find the 10th term of 5, 8, 11, ...</h4>
-                <p>
-                    a = 5, d = 3, n = 10.
-                </p>
-                <p>
-                    T<sub>10</sub> = 5 + (10 - 1)(3)
-                    = 5 + 27
-                    = <strong>32</strong>.
-                </p>
-
-                <h4>Example 3: Find the sum of the first 10 terms of 2, 5, 8, ...</h4>
-                <p>
-                    a = 2, d = 3, n = 10.
-                </p>
-                <p>
-                    S<sub>10</sub> = 10/2 [2(2) + 9(3)]
-                </p>
-                <p>
-                    = 5(4 + 27)
-                    = <strong>155</strong>.
-                </p>
-
-                <h4>Example 4: Find the next term in 2, 6, 18, 54, ...</h4>
-                <p>
-                    Common ratio = 3.
-                </p>
-                <p>
-                    Next term = 54 × 3 = <strong>162</strong>.
-                </p>
-            `,
-
-            practice: `
-                <ol>
-                    <li>Find the next three terms: 4, 8, 12, 16, ...</li>
-                    <li>Find the next three terms: 3, 6, 12, 24, ...</li>
-                    <li>Find the common difference of 7, 11, 15, 19.</li>
-                    <li>Find the 12th term of 2, 5, 8, ...</li>
-                    <li>Find the 20th term of 4, 9, 14, ...</li>
-                    <li>Find the sum of the first 10 terms of 1, 3, 5, ...</li>
-                    <li>Find the common ratio of 5, 15, 45, 135.</li>
-                    <li>Find the 6th term of 2, 6, 18, ...</li>
-                    <li>Find the sum of 3 + 6 + 9 + ... + 30.</li>
-                    <li>State the formula for the nth term of an arithmetic sequence.</li>
-                </ol>
-            `,
-
-            answers: `
-                <ol>
-                    <li>20, 24, 28</li>
-                    <li>48, 96, 192</li>
-                    <li>4</li>
-                    <li>35</li>
-                    <li>99</li>
-                    <li>100</li>
-                    <li>3</li>
-                    <li>486</li>
-                    <li>165</li>
-                    <li>T<sub>n</sub> = a + (n - 1)d</li>
-                </ol>
-            `
-        },
-
-        17: {
-            title: "Binary Operations",
-
-            lesson: `
-                <h3>Meaning of a Binary Operation</h3>
-                <p>
-                    A binary operation combines two elements of a set to produce another element.
-                    A special symbol such as *, ⊙ or △ may be used instead of the familiar operations.
-                </p>
-
-                <h3>Definition of an Operation</h3>
-                <p>
-                    An operation may be defined by a rule such as:
-                    a * b = a + b + 2.
-                </p>
-
-                <p>
-                    To evaluate a * b, substitute the values of a and b into the rule.
-                </p>
-
-                <h3>Closure</h3>
-                <p>
-                    A set is closed under an operation if operating on any two members of the set
-                    produces another member of the same set.
-                </p>
-
-                <h3>Commutative Property</h3>
-                <p>
-                    An operation is commutative if:
-                    a * b = b * a.
-                </p>
-
-                <h3>Associative Property</h3>
-                <p>
-                    An operation is associative if:
-                    (a * b) * c = a * (b * c).
-                </p>
-
-                <h3>Identity Element</h3>
-                <p>
-                    An identity element leaves another element unchanged when the operation is performed.
-                </p>
-
-                <h3>Inverse</h3>
-                <p>
-                    An inverse combines with an element to produce the identity element.
-                </p>
-            `,
-
-            examples: `
-                <h4>Example 1</h4>
-                <p>
-                    If a * b = a + b + 2, find 3 * 5.
-                </p>
-                <p>
-                    3 * 5 = 3 + 5 + 2 = <strong>10</strong>.
-                </p>
-
-                <h4>Example 2</h4>
-                <p>
-                    If a * b = 2a + b, find 4 * 3.
-                </p>
-                <p>
-                    = 2(4) + 3
-                    = <strong>11</strong>.
-                </p>
-
-                <h4>Example 3</h4>
-                <p>
-                    If a * b = a + b, is the operation commutative?
-                </p>
-                <p>
-                    a * b = a + b and b * a = b + a.
-                    Since a + b = b + a, the operation is <strong>commutative</strong>.
-                </p>
-
-                <h4>Example 4</h4>
-                <p>
-                    If a * b = a + b - 1, find 2 * (3 * 4).
-                </p>
-                <p>
-                    3 * 4 = 3 + 4 - 1 = 6.
-                </p>
-                <p>
-                    2 * 6 = 2 + 6 - 1 = <strong>7</strong>.
-                </p>
-            `,
-
-            practice: `
-                <ol>
-                    <li>If a * b = a + b + 1, find 3 * 4.</li>
-                    <li>If a * b = 2a + b, find 5 * 3.</li>
-                    <li>If a * b = a - b, find 7 * 2.</li>
-                    <li>If a * b = ab + 1, find 2 * 4.</li>
-                    <li>If a * b = a + b - 2, find 5 * 6.</li>
-                    <li>For a * b = a + b, calculate 4 * 7.</li>
-                    <li>For a * b = a + b, calculate 7 * 4.</li>
-                    <li>Is ordinary subtraction commutative?</li>
-                    <li>What is meant by an identity element?</li>
-                    <li>If a * b = a + b + 3, find 2 * (4 * 5).</li>
-                </ol>
-            `,
-
-            answers: `
-                <ol>
-                    <li>8</li>
-                    <li>13</li>
-                    <li>5</li>
-                    <li>9</li>
-                    <li>9</li>
-                    <li>11</li>
-                    <li>11</li>
-                    <li>No</li>
-                    <li>An element that leaves another element unchanged under the operation.</li>
-                    <li>14</li>
-                </ol>
-            `
-        },
-
-        18: {
-            title: "Modular Arithmetic",
-
-            lesson: `
-                <h3>Meaning of Modular Arithmetic</h3>
-                <p>
-                    Modular arithmetic is arithmetic involving remainders.
-                    It is sometimes called clock arithmetic.
-                </p>
-
-                <h3>Modulo Notation</h3>
                 <p>
-                    The expression a mod n means the remainder obtained when a is divided by n.
+                    Volume = side<sup>3</sup>.
+                    <br>
+                    Total surface area = 6 × side<sup>2</sup>.
                 </p>
 
+                <h3>Cuboid</h3>
                 <p>
-                    For example:
-                    17 mod 5 = 2.
+                    Volume = length × width × height.
                 </p>
-
-                <h3>Congruence</h3>
-                <p>
-                    We write:
-                    a ≡ b (mod n)
-                    when a and b have the same remainder when divided by n.
-                </p>
-
-                <h3>Properties</h3>
-                <p>
-                    Addition, subtraction and multiplication can be performed using congruences.
-                </p>
-
-                <h3>Clock Arithmetic</h3>
-                <p>
-                    On a 12-hour clock, 15 o'clock is equivalent to 3 o'clock.
-                    Therefore 15 ≡ 3 (mod 12).
-                </p>
-
-                <h3>Solving Simple Congruences</h3>
-                <p>
-                    Reduce numbers to their remainders and solve within the required modulus.
-                </p>
-            `,
-
-            examples: `
-                <h4>Example 1: Find 23 mod 5</h4>
-                <p>
-                    23 = 5(4) + 3.
-                </p>
-                <p>
-                    Answer = <strong>3</strong>.
-                </p>
-
-                <h4>Example 2: Find 37 mod 6</h4>
-                <p>
-                    37 = 6(6) + 1.
-                </p>
-                <p>
-                    Answer = <strong>1</strong>.
-                </p>
-
-                <h4>Example 3</h4>
-                <p>
-                    Determine whether 25 ≡ 7 (mod 9).
-                </p>
-                <p>
-                    25 mod 9 = 7.
-                </p>
-                <p>
-                    Therefore <strong>25 ≡ 7 (mod 9)</strong>.
-                </p>
-
-                <h4>Example 4</h4>
-                <p>
-                    Find 8 + 9 (mod 7).
-                </p>
-                <p>
-                    17 mod 7 = <strong>3</strong>.
-                </p>
-
-                <h4>Example 5</h4>
-                <p>
-                    What time is it on a 12-hour clock 8 hours after 7 o'clock?
-                </p>
-                <p>
-                    7 + 8 = 15.
-                </p>
-                <p>
-                    15 mod 12 = <strong>3</strong>.
-                </p>
-            `,
-
-            practice: `
-                <ol>
-                    <li>Find 19 mod 4.</li>
-                    <li>Find 35 mod 6.</li>
-                    <li>Find 50 mod 7.</li>
-                    <li>Find 27 mod 5.</li>
-                    <li>Determine whether 22 ≡ 4 (mod 9).</li>
-                    <li>Calculate 8 + 12 (mod 5).</li>
-                    <li>Calculate 7 × 6 (mod 5).</li>
-                    <li>What is 14 o'clock on a 12-hour clock?</li>
-                    <li>Find the remainder when 100 is divided by 9.</li>
-                    <li>Explain what a ≡ b (mod n) means.</li>
-                </ol>
-            `,
-
-            answers: `
-                <ol>
-                    <li>3</li>
-                    <li>5</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>Yes</li>
-                    <li>0</li>
-                    <li>2</li>
-                    <li>2 o'clock</li>
-                    <li>1</li>
-                    <li>a and b have the same remainder when divided by n.</li>
-                </ol>
-            `
-        },
-
-        19: {
-            title: "Plane Geometry",
-
-            lesson: `
-                <h3>Meaning of Plane Geometry</h3>
-                <p>
-                    Plane geometry deals with figures and shapes on a flat surface.
-                    It includes points, lines, angles, triangles, quadrilaterals, polygons and circles.
-                </p>
-
-                <h3>Basic Terms</h3>
-                <ul>
-                    <li><strong>Point:</strong> indicates a position.</li>
-                    <li><strong>Line:</strong> extends indefinitely in both directions.</li>
-                    <li><strong>Line segment:</strong> part of a line with two endpoints.</li>
-                    <li><strong>Ray:</strong> starts at one point and extends indefinitely in one direction.</li>
-                    <li><strong>Angle:</strong> formed by two rays meeting at a common endpoint.</li>
-                </ul>
-
-                <h3>Angles</h3>
-                <ul>
-                    <li>Acute angle: less than 90°</li>
-                    <li>Right angle: 90°</li>
-                    <li>Obtuse angle: greater than 90° but less than 180°</li>
-                    <li>Straight angle: 180°</li>
-                    <li>Reflex angle: greater than 180° but less than 360°</li>
-                </ul>
-
-                <h3>Important Geometry Facts</h3>
-                <p>
-                    Angles on a straight line add to 180°.
-                    Angles around a point add to 360°.
-                    Vertically opposite angles are equal.
-                </p>
-
-                <h3>Parallel Lines</h3>
-                <p>
-                    When parallel lines are crossed by a transversal, corresponding angles are equal,
-                    alternate angles are equal and co-interior angles add to 180°.
-                </p>
-            `,
-
-            examples: `
-                <h4>Example 1</h4>
-                <p>
-                    Two angles on a straight line are 65° and x.
-                </p>
-                <p>
-                    x + 65° = 180°.
-                </p>
-                <p>
-                    x = <strong>115°</strong>.
-                </p>
-
-                <h4>Example 2</h4>
-                <p>
-                    Angles around a point are 80°, 110° and x.
-                </p>
-                <p>
-                    x = 360° - 80° - 110°
-                    = <strong>170°</strong>.
-                </p>
-
-                <h4>Example 3</h4>
-                <p>
-                    One angle formed by intersecting lines is 70°.
-                    Its vertically opposite angle is also <strong>70°</strong>.
-                </p>
-
-                <h4>Example 4</h4>
-                <p>
-                    If an alternate angle is 55°, the corresponding alternate angle is also
-                    <strong>55°</strong> when the lines are parallel.
-                </p>
-            `,
-
-            practice: `
-                <ol>
-                    <li>Find the complement of 35°.</li>
-                    <li>Find the supplement of 72°.</li>
-                    <li>Two angles on a straight line are 48° and x. Find x.</li>
-                    <li>Angles around a point are 90°, 120° and x. Find x.</li>
-                    <li>Classify 45°.</li>
-                    <li>Classify 90°.</li>
-                    <li>Classify 135°.</li>
-                    <li>What is the sum of angles on a straight line?</li>
-                    <li>What is the sum of angles around a point?</li>
-                    <li>State the relationship between vertically opposite angles.</li>
-                </ol>
-            `,
-
-            answers: `
-                <ol>
-                    <li>55°</li>
-                    <li>108°</li>
-                    <li>132°</li>
-                    <li>150°</li>
-                    <li>Acute</li>
-                    <li>Right angle</li>
-                    <li>Obtuse</li>
-                    <li>180°</li>
-                    <li>360°</li>
-                    <li>They are equal.</li>
-                </ol>
-            `
-        },
-
-        20: {
-            title: "Angles and Lines",
-
-            lesson: `
-                <h3>Lines</h3>
-                <p>
-                    Lines may be parallel, perpendicular or intersecting.
-                    Parallel lines never meet, while perpendicular lines meet at 90°.
-                </p>
-
-                <h3>Transversal</h3>
-                <p>
-                    A transversal is a line that crosses two or more other lines.
-                    Special angle relationships are formed when a transversal crosses parallel lines.
-                </p>
-
-                <h3>Corresponding Angles</h3>
-                <p>
-                    Corresponding angles are equal when two parallel lines are crossed by a transversal.
-                </p>
-
-                <h3>Alternate Angles</h3>
-                <p>
-                    Alternate angles are equal when the lines are parallel.
-                </p>
-
-                <h3>Co-interior Angles</h3>
-                <p>
-                    Co-interior angles on the same side of a transversal add up to 180°.
-                </p>
-
-                <h3>Angle Problems</h3>
-                <p>
-                    Use known angle relationships to form equations and calculate unknown angles.
-                </p>
-            `,
-
-            examples: `
-                <h4>Example 1</h4>
-                <p>
-                    A corresponding angle is 72°. Find the matching angle.
-                </p>
-                <p>
-                    Corresponding angles are equal.
-                    Answer = <strong>72°</strong>.
-                </p>
-
-                <h4>Example 2</h4>
-                <p>
-                    Co-interior angles are x and 115°.
-                </p>
-                <p>
-                    x + 115° = 180°.
-                </p>
-                <p>
-                    x = <strong>65°</strong>.
-                </p>
-
-                <h4>Example 3</h4>
-                <p>
-                    Two perpendicular lines meet. If one angle is 90°, all four angles around
-                    the intersection are <strong>90°</strong>.
-                </p>
-
-                <h4>Example 4</h4>
-                <p>
-                    An angle is 125°. Its adjacent angle on a straight line is:
-                </p>
-                <p>
-                    180° - 125° = <strong>55°</strong>.
-                </p>
-            `,
-
-            practice: `
-                <ol>
-                    <li>Find the supplementary angle of 65°.</li>
-                    <li>Find the complementary angle of 28°.</li>
-                    <li>If a corresponding angle is 80°, find the other corresponding angle.</li>
-                    <li>If an alternate angle is 63°, find its alternate pair.</li>
-                    <li>Find x if x + 110° = 180°.</li>
-                    <li>Find x if x + 75° = 180°.</li>
-                    <li>What angle is formed by perpendicular lines?</li>
-                    <li>What is a transversal?</li>
-                    <li>What is the relationship between co-interior angles?</li>
-                    <li>If one angle is 140°, find the adjacent angle on a straight line.</li>
-                </ol>
-            `,
-
-            answers: `
-                <ol>
-                    <li>115°</li>
-                    <li>62°</li>
-                    <li>80°</li>
-                    <li>63°</li>
-                    <li>70°</li>
-                    <li>105°</li>
-                    <li>90°</li>
-                    <li>A line crossing two or more lines.</li>
-                    <li>They add to 180° when the lines are parallel.</li>
-                    <li>40°</li>
-                </ol>
-            `
-        },
-
-        21: {
-            title: "Triangles",
-
-            lesson: `
-                <h3>Meaning of a Triangle</h3>
-                <p>
-                    A triangle is a plane figure bounded by three straight lines.
-                    It has three sides, three angles and three vertices.
-                </p>
-
-                <h3>Types According to Sides</h3>
-                <ul>
-                    <li>Equilateral triangle: three equal sides.</li>
-                    <li>Isosceles triangle: two equal sides.</li>
-                    <li>Scalene triangle: no equal sides.</li>
-                </ul>
-
-                <h3>Types According to Angles</h3>
-                <ul>
-                    <li>Acute-angled triangle</li>
-                    <li>Right-angled triangle</li>
-                    <li>Obtuse-angled triangle</li>
-                </ul>
-
-                <h3>Angle Sum</h3>
-                <p>
-                    The sum of the interior angles of every triangle is 180°.
-                </p>
-
-                <h3>Exterior Angle</h3>
-                <p>
-                    An exterior angle of a triangle equals the sum of the two opposite interior angles.
-                </p>
-
-                <h3>Pythagoras' Theorem</h3>
-                <p>
-                    In a right-angled triangle:
-                    a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>,
-                    where c is the hypotenuse.
-                </p>
-            `,
-
-            examples: `
-                <h4>Example 1</h4>
-                <p>
-                    A triangle has angles 50° and 60°. Find the third angle.
-                </p>
-                <p>
-                    Third angle = 180° - 50° - 60°
-                    = <strong>70°</strong>.
-                </p>
-
-                <h4>Example 2</h4>
-                <p>
-                    Find the hypotenuse of a right triangle with sides 6 cm and 8 cm.
-                </p>
-                <p>
-                    c<sup>2</sup> = 6<sup>2</sup> + 8<sup>2</sup>
-                    = 36 + 64 = 100.
-                </p>
-                <p>
-                    c = <strong>10 cm</strong>.
-                </p>
-
-                <h4>Example 3</h4>
-                <p>
-                    An isosceles triangle has equal angles of 50°. Find the third angle.
-                </p>
-                <p>
-                    180° - 50° - 50° = <strong>80°</strong>.
-                </p>
-
-                <h4>Example 4</h4>
-                <p>
-                    The exterior angle of a triangle is 120°. One opposite interior angle is 50°.
-                    Find the other.
-                </p>
-                <p>
-                    120° = 50° + x.
-                </p>
-                <p>
-                    x = <strong>70°</strong>.
-                </p>
-            `,
-
-            practice: `
-                <ol>
-                    <li>Find the third angle of a triangle with angles 40° and 70°.</li>
-                    <li>Find the third angle if two angles are 55° and 65°.</li>
-                    <li>State the angle sum of a triangle.</li>
-                    <li>What type of triangle has three equal sides?</li>
-                    <li>What type of triangle has two equal sides?</li>
-                    <li>Find the hypotenuse of a right triangle with sides 5 cm and 12 cm.</li>
-                    <li>Find the missing side if the hypotenuse is 13 cm and one side is 5 cm.</li>
-                    <li>An exterior angle is 110° and one opposite interior angle is 45°. Find the other.</li>
-                    <li>Classify a triangle with angles 30°, 60° and 90°.</li>
-                    <li>State Pythagoras' theorem.</li>
-                </ol>
-            `,
-
-            answers: `
-                <ol>
-                    <li>70°</li>
-                    <li>60°</li>
-                    <li>180°</li>
-                    <li>Equilateral</li>
-                    <li>Isosceles</li>
-                    <li>13 cm</li>
-                    <li>12 cm</li>
-                    <li>65°</li>
-                    <li>Right-angled triangle</li>
-                    <li>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></li>
-                </ol>
-            `
-        },
-
-        22: {
-            title: "Quadrilaterals and Polygons",
-
-            lesson: `
-                <h3>Quadrilaterals</h3>
-                <p>
-                    A quadrilateral is a polygon with four sides, four vertices and four interior angles.
-                    The sum of its interior angles is 360°.
-                </p>
-
-                <h3>Types of Quadrilaterals</h3>
-                <ul>
-                    <li>Square</li>
-                    <li>Rectangle</li>
-                    <li>Parallelogram</li>
-                    <li>Rhombus</li>
-                    <li>Trapezium</li>
-                    <li>Kite</li>
-                </ul>
-
-                <h3>Polygons</h3>
-                <p>
-                    A polygon is a closed plane figure made up of straight line segments.
-                </p>
-
-                <h3>Names of Polygons</h3>
-                <ul>
-                    <li>3 sides — triangle</li>
-                    <li>4 sides — quadrilateral</li>
-                    <li>5 sides — pentagon</li>
-                    <li>6 sides — hexagon</li>
-                    <li>7 sides — heptagon</li>
-                    <li>8 sides — octagon</li>
-                    <li>9 sides — nonagon</li>
-                    <li>10 sides — decagon</li>
-                </ul>
-
-                <h3>Interior Angle Sum</h3>
-                <p>
-                    For a polygon with n sides:
-                    <strong>(n - 2) × 180°</strong>.
-                </p>
-
-                <h3>Regular Polygons</h3>
-                <p>
-                    A regular polygon has equal sides and equal interior angles.
-                    Each interior angle is:
-                    [(n - 2) × 180°] / n.
-                </p>
-            `,
-
-            examples: `
-                <h4>Example 1</h4>
-                <p>
-                    Find the fourth angle of a quadrilateral whose other angles are 80°, 90° and 100°.
-                </p>
-                <p>
-                    x = 360° - 80° - 90° - 100°
-                    = <strong>90°</strong>.
-                </p>
-
-                <h4>Example 2</h4>
-                <p>
-                    Find the sum of the interior angles of a pentagon.
-                </p>
                 <p>
-                    (5 - 2) × 180° = <strong>540°</strong>.
+                    Total surface area = 2(lw + lh + wh).
                 </p>
 
-                <h4>Example 3</h4>
+                <h3>Cylinder</h3>
                 <p>
-                    Find each interior angle of a regular hexagon.
+                    Volume = πr<sup>2</sup>h.
                 </p>
-                <p>
-                    [(6 - 2) × 180°] / 6
-                    = 720° / 6
-                    = <strong>120°</strong>.
-                </p>
-
-                <h4>Example 4</h4>
-                <p>
-                    Find the sum of the interior angles of an octagon.
-                </p>
-                <p>
-                    (8 - 2) × 180°
-                    = <strong>1080°</strong>.
-                </p>
-            `,
-
-            practice: `
-                <ol>
-                    <li>Find the sum of angles in a quadrilateral.</li>
-                    <li>Find the fourth angle of a quadrilateral with angles 70°, 80° and 100°.</li>
-                    <li>Find the interior angle sum of a pentagon.</li>
-                    <li>Find the interior angle sum of a hexagon.</li>
-                    <li>Find the interior angle sum of an octagon.</li>
-                    <li>Find each interior angle of a regular pentagon.</li>
-                    <li>Find each interior angle of a regular octagon.</li>
-                    <li>How many sides does a decagon have?</li>
-                    <li>How many sides does a hexagon have?</li>
-                    <li>State the formula for the sum of interior angles of an n-sided polygon.</li>
-                </ol>
-            `,
-
-            answers: `
-                <ol>
-                    <li>360°</li>
-                    <li>110°</li>
-                    <li>540°</li>
-                    <li>720°</li>
-                    <li>1080°</li>
-                    <li>108°</li>
-                    <li>135°</li>
-                    <li>10</li>
-                    <li>6</li>
-                    <li>(n - 2) × 180°</li>
-                </ol>
-            `
-        },
-
-        23: {
-            title: "Circles",
-
-            lesson: `
-                <h3>Parts of a Circle</h3>
-                <ul>
-                    <li><strong>Centre:</strong> middle point of the circle.</li>
-                    <li><strong>Radius:</strong> distance from centre to circumference.</li>
-                    <li><strong>Diameter:</strong> line through the centre joining two points on the circumference.</li>
-                    <li><strong>Chord:</strong> line segment joining two points on the circumference.</li>
-                    <li><strong>Arc:</strong> part of the circumference.</li>
-                    <li><strong>Sector:</strong> region bounded by two radii and an arc.</li>
-                    <li><strong>Segment:</strong> region bounded by a chord and an arc.</li>
-                </ul>
-
-                <h3>Diameter and Radius</h3>
-                <p>
-                    Diameter = 2 × radius.
-                </p>
-
-                <h3>Circumference</h3>
-                <p>
-                    C = 2πr or C = πd.
-                </p>
-
-                <h3>Area</h3>
-                <p>
-                    A = πr<sup>2</sup>.
-                </p>
-
-                <h3>Angles in a Circle</h3>
-                <p>
-                    The angle at the centre standing on an arc is twice the angle at the circumference
-                    standing on the same arc.
-                </p>
-
-                <p>
-                    The angle in a semicircle is 90°.
-                </p>
-            `,
-
-            examples: `
-                <h4>Example 1: Find the circumference of a circle of radius 7 cm.</h4>
-                <p>
-                    C = 2πr
-                    = 2 × 22/7 × 7
-                    = <strong>44 cm</strong>.
-                </p>
-
-                <h4>Example 2: Find the area of a circle of radius 7 cm.</h4>
-                <p>
-                    A = πr<sup>2</sup>
-                    = 22/7 × 7 × 7
-                    = <strong>154 cm<sup>2</sup></strong>.
-                </p>
-
-                <h4>Example 3</h4>
-                <p>
-                    The angle at the centre is 100°. Find the angle at the circumference standing
-                    on the same arc.
-                </p>
-                <p>
-                    100° ÷ 2 = <strong>50°</strong>.
-                </p>
-
-                <h4>Example 4</h4>
-                <p>
-                    A circle has diameter 14 cm. Find its radius.
-                </p>
-                <p>
-                    Radius = 14 ÷ 2 = <strong>7 cm</strong>.
-                </p>
-            `,
-
-            practice: `
-                <ol>
-                    <li>Find the diameter of a circle with radius 5 cm.</li>
-                    <li>Find the radius of a circle with diameter 18 cm.</li>
-                    <li>Find the circumference of a circle with radius 7 cm using π = 22/7.</li>
-                    <li>Find the area of a circle with radius 7 cm using π = 22/7.</li>
-                    <li>Find the circumference of a circle with diameter 14 cm.</li>
-                    <li>If the central angle is 80°, find the angle at the circumference on the same arc.</li>
-                    <li>If the angle at the circumference is 35°, find the central angle.</li>
-                    <li>What is the angle in a semicircle?</li>
-                    <li>State the formula for the area of a circle.</li>
-                    <li>State the formula for the circumference of a circle.</li>
-                </ol>
-            `,
-
-            answers: `
-                <ol>
-                    <li>10 cm</li>
-                    <li>9 cm</li>
-                    <li>44 cm</li>
-                    <li>154 cm<sup>2</sup></li>
-                    <li>44 cm</li>
-                    <li>40°</li>
-                    <li>70°</li>
-                    <li>90°</li>
-                    <li>A = πr<sup>2</sup></li>
-                    <li>C = 2πr or πd</li>
-                </ol>
-            `
-        },
-
-        24: {
-            title: "Mensuration of Plane Shapes",
-
-            lesson: `
-                <h3>Meaning of Mensuration</h3>
-                <p>
-                    Mensuration is the branch of mathematics concerned with measuring lengths,
-                    perimeters, areas and other dimensions of geometric figures.
-                </p>
-
-                <h3>Rectangle</h3>
-                <p>
-                    Area = length × width.
-                    Perimeter = 2(length + width).
-                </p>
-
-                <h3>Square</h3>
-                <p>
-                    Area = side<sup>2</sup>.
-                    Perimeter = 4 × side.
-                </p>
-
-                <h3>Triangle</h3>
-                <p>
-                    Area = 1/2 × base × perpendicular height.
-                </p>
-
-                <h3>Parallelogram</h3>
-                <p>
-                    Area = base × perpendicular height.
-                </p>
-
-                <h3>Trapezium</h3>
                 <p>
-                    Area = 1/2 × (sum of parallel sides) × height.
+                    Curved surface area = 2πrh.
+                    <br>
+                    Total surface area = 2πr(h + r).
                 </p>
 
-                <h3>Circle</h3>
+                <h3>Prism</h3>
                 <p>
-                    Area = πr<sup>2</sup>.
-                    Circumference = 2πr.
+                    Volume of a prism = area of cross-section × length.
                 </p>
 
                 <h3>Units</h3>
                 <p>
-                    Length is measured in units such as cm and m.
-                    Area is measured in square units such as cm<sup>2</sup> and m<sup>2</sup>.
-                    Always make sure units are consistent before calculating.
+                    Volume is measured in cubic units such as cm<sup>3</sup> and m<sup>3</sup>.
+                    Surface area is measured in square units.
                 </p>
             `,
 
             examples: `
-                <h4>Example 1: Find the area of a rectangle 12 cm by 5 cm.</h4>
+                <h4>Example 1</h4>
                 <p>
-                    Area = 12 × 5
-                    = <strong>60 cm<sup>2</sup></strong>.
+                    Find the volume of a cuboid measuring 8 cm × 5 cm × 3 cm.
+                </p>
+                <p>
+                    V = 8 × 5 × 3 = <strong>120 cm<sup>3</sup></strong>.
                 </p>
 
-                <h4>Example 2: Find the perimeter of a rectangle 10 m by 6 m.</h4>
+                <h4>Example 2</h4>
                 <p>
-                    P = 2(10 + 6)
-                    = <strong>32 m</strong>.
+                    Find the volume of a cube of side 6 cm.
+                </p>
+                <p>
+                    V = 6<sup>3</sup> = <strong>216 cm<sup>3</sup></strong>.
                 </p>
 
-                <h4>Example 3: Find the area of a triangle with base 8 cm and height 5 cm.</h4>
+                <h4>Example 3</h4>
                 <p>
-                    A = 1/2 × 8 × 5
-                    = <strong>20 cm<sup>2</sup></strong>.
+                    Find the volume of a cylinder of radius 7 cm and height 10 cm.
+                    Use π = 22/7.
+                </p>
+                <p>
+                    V = πr<sup>2</sup>h
+                    = 22/7 × 7 × 7 × 10
+                    = <strong>1540 cm<sup>3</sup></strong>.
                 </p>
 
-                <h4>Example 4: Find the area of a trapezium with parallel sides 8 cm and 12 cm
-                and height 5 cm.</h4>
+                <h4>Example 4</h4>
                 <p>
-                    A = 1/2(8 + 12)(5)
-                    = 1/2 × 20 × 5
-                    = <strong>50 cm<sup>2</sup></strong>.
+                    Find the total surface area of a cube of side 4 cm.
                 </p>
-
-                <h4>Example 5: Find the area of a square of side 9 cm.</h4>
                 <p>
-                    A = 9<sup>2</sup>
-                    = <strong>81 cm<sup>2</sup></strong>.
+                    TSA = 6 × 4<sup>2</sup>
+                    = 6 × 16
+                    = <strong>96 cm<sup>2</sup></strong>.
                 </p>
             `,
 
             practice: `
                 <ol>
-                    <li>Find the area of a rectangle 15 cm by 8 cm.</li>
-                    <li>Find the perimeter of a rectangle 12 cm by 7 cm.</li>
-                    <li>Find the area of a square of side 11 cm.</li>
-                    <li>Find the perimeter of a square of side 9 cm.</li>
-                    <li>Find the area of a triangle with base 10 cm and height 6 cm.</li>
-                    <li>Find the area of a parallelogram with base 12 cm and height 7 cm.</li>
-                    <li>Find the area of a trapezium with parallel sides 10 cm and 16 cm and height 5 cm.</li>
-                    <li>Find the circumference of a circle with radius 7 cm using π = 22/7.</li>
-                    <li>Find the area of a circle with radius 7 cm using π = 22/7.</li>
-                    <li>State the formula for the area of a triangle.</li>
+                    <li>Find the volume of a cube of side 5 cm.</li>
+                    <li>Find the volume of a cuboid measuring 10 cm × 4 cm × 3 cm.</li>
+                    <li>Find the total surface area of a cube of side 7 cm.</li>
+                    <li>Find the volume of a cylinder of radius 7 cm and height 5 cm. Use π = 22/7.</li>
+                    <li>Find the curved surface area of a cylinder with radius 7 cm and height 10 cm. Use π = 22/7.</li>
+                    <li>A cuboid has length 12 cm, width 5 cm and height 4 cm. Find its volume.</li>
+                    <li>A cube has volume 125 cm<sup>3</sup>. Find its side.</li>
+                    <li>State the formula for the volume of a cylinder.</li>
+                    <li>State the formula for the volume of a cuboid.</li>
+                    <li>State the formula for the volume of a prism.</li>
                 </ol>
             `,
 
             answers: `
                 <ol>
-                    <li>120 cm<sup>2</sup></li>
-                    <li>38 cm</li>
-                    <li>121 cm<sup>2</sup></li>
-                    <li>36 cm</li>
-                    <li>30 cm<sup>2</sup></li>
-                    <li>84 cm<sup>2</sup></li>
-                    <li>65 cm<sup>2</sup></li>
-                    <li>44 cm</li>
-                    <li>154 cm<sup>2</sup></li>
-                    <li>1/2 × base × perpendicular height</li>
+                    <li>125 cm<sup>3</sup></li>
+                    <li>120 cm<sup>3</sup></li>
+                    <li>294 cm<sup>2</sup></li>
+                    <li>770 cm<sup>3</sup></li>
+                    <li>440 cm<sup>2</sup></li>
+                    <li>240 cm<sup>3</sup></li>
+                    <li>5 cm</li>
+                    <li>V = πr<sup>2</sup>h</li>
+                    <li>V = lwh</li>
+                    <li>Volume = area of cross-section × length</li>
+                </ol>
+            `
+        },
+
+        26: {
+            title: "Coordinate Geometry",
+
+            lesson: `
+                <h3>Introduction</h3>
+                <p>
+                    Coordinate geometry uses numbers to describe the position of points on a plane.
+                    The plane consists of a horizontal x-axis and a vertical y-axis.
+                </p>
+
+                <h3>Coordinates</h3>
+                <p>
+                    A point is written as (x, y). The first number gives the horizontal position
+                    and the second gives the vertical position.
+                </p>
+
+                <h3>Quadrants</h3>
+                <ul>
+                    <li>First quadrant: (+, +)</li>
+                    <li>Second quadrant: (-, +)</li>
+                    <li>Third quadrant: (-, -)</li>
+                    <li>Fourth quadrant: (+, -)</li>
+                </ul>
+
+                <h3>Midpoint</h3>
+                <p>
+                    The midpoint of (x<sub>1</sub>, y<sub>1</sub>) and (x<sub>2</sub>, y<sub>2</sub>) is:
+                </p>
+                <p>
+                    ((x<sub>1</sub> + x<sub>2</sub>)/2,
+                    (y<sub>1</sub> + y<sub>2</sub>)/2)
+                </p>
+
+                <h3>Distance Between Two Points</h3>
+                <p>
+                    Distance =
+                    √[(x<sub>2</sub> - x<sub>1</sub>)<sup>2</sup>
+                    + (y<sub>2</sub> - y<sub>1</sub>)<sup>2</sup>].
+                </p>
+            `,
+
+            examples: `
+                <h4>Example 1</h4>
+                <p>
+                    State the quadrant containing (3, 5).
+                </p>
+                <p>
+                    Both coordinates are positive, so the point lies in the
+                    <strong>first quadrant</strong>.
+                </p>
+
+                <h4>Example 2</h4>
+                <p>
+                    Find the midpoint of (2, 4) and (8, 10).
+                </p>
+                <p>
+                    Midpoint = ((2 + 8)/2, (4 + 10)/2)
+                    = <strong>(5, 7)</strong>.
+                </p>
+
+                <h4>Example 3</h4>
+                <p>
+                    Find the distance between (0, 0) and (3, 4).
+                </p>
+                <p>
+                    d = √(3<sup>2</sup> + 4<sup>2</sup>)
+                    = √25
+                    = <strong>5 units</strong>.
+                </p>
+
+                <h4>Example 4</h4>
+                <p>
+                    State the coordinates of the origin.
+                </p>
+                <p>
+                    The origin is <strong>(0, 0)</strong>.
+                </p>
+            `,
+
+            practice: `
+                <ol>
+                    <li>Which quadrant contains (4, 6)?</li>
+                    <li>Which quadrant contains (-3, 5)?</li>
+                    <li>Which quadrant contains (-2, -7)?</li>
+                    <li>Which quadrant contains (5, -4)?</li>
+                    <li>Find the midpoint of (2, 6) and (8, 10).</li>
+                    <li>Find the midpoint of (-2, 4) and (6, 8).</li>
+                    <li>Find the distance between (0, 0) and (6, 8).</li>
+                    <li>Find the distance between (1, 2) and (4, 6).</li>
+                    <li>State the coordinates of the origin.</li>
+                    <li>What are the coordinates of a point on the x-axis?</li>
+                </ol>
+            `,
+
+            answers: `
+                <ol>
+                    <li>First quadrant</li>
+                    <li>Second quadrant</li>
+                    <li>Third quadrant</li>
+                    <li>Fourth quadrant</li>
+                    <li>(5, 8)</li>
+                    <li>(2, 6)</li>
+                    <li>10 units</li>
+                    <li>5 units</li>
+                    <li>(0, 0)</li>
+                    <li>(x, 0)</li>
+                </ol>
+            `
+        },
+
+        27: {
+            title: "Straight Lines and Graphs",
+
+            lesson: `
+                <h3>Introduction</h3>
+                <p>
+                    A straight-line graph represents a linear relationship between two variables.
+                </p>
+
+                <h3>Equation of a Straight Line</h3>
+                <p>
+                    A common form is:
+                    <strong>y = mx + c</strong>.
+                </p>
+
+                <p>
+                    m is the gradient or slope, while c is the y-intercept.
+                </p>
+
+                <h3>Gradient</h3>
+                <p>
+                    Gradient =
+                    change in y / change in x.
+                </p>
+
+                <h3>Positive and Negative Gradient</h3>
+                <p>
+                    A positive gradient rises from left to right.
+                    A negative gradient falls from left to right.
+                </p>
+
+                <h3>Plotting a Graph</h3>
+                <p>
+                    Choose values of x, calculate the corresponding values of y,
+                    plot the ordered pairs and join them with a straight line.
+                </p>
+
+                <h3>Intercepts</h3>
+                <p>
+                    The y-intercept is the point where the line crosses the y-axis.
+                    The x-intercept is where the line crosses the x-axis.
+                </p>
+            `,
+
+            examples: `
+                <h4>Example 1</h4>
+                <p>
+                    Find the gradient of a line passing through (1, 2) and (5, 10).
+                </p>
+                <p>
+                    m = (10 - 2)/(5 - 1)
+                    = 8/4
+                    = <strong>2</strong>.
+                </p>
+
+                <h4>Example 2</h4>
+                <p>
+                    Identify the gradient and y-intercept of y = 3x + 5.
+                </p>
+                <p>
+                    Gradient = <strong>3</strong>.
+                    <br>
+                    y-intercept = <strong>5</strong>.
+                </p>
+
+                <h4>Example 3</h4>
+                <p>
+                    Find y when x = 4 in y = 2x + 3.
+                </p>
+                <p>
+                    y = 2(4) + 3
+                    = <strong>11</strong>.
+                </p>
+
+                <h4>Example 4</h4>
+                <p>
+                    Find the x-intercept of y = x - 4.
+                </p>
+                <p>
+                    At the x-intercept, y = 0.
+                    Therefore 0 = x - 4.
+                    <br>
+                    x = <strong>4</strong>.
+                </p>
+            `,
+
+            practice: `
+                <ol>
+                    <li>State the gradient of y = 4x + 2.</li>
+                    <li>State the y-intercept of y = 5x + 7.</li>
+                    <li>Find y when x = 3 in y = 2x + 1.</li>
+                    <li>Find y when x = 5 in y = 3x - 2.</li>
+                    <li>Find the gradient through (0, 0) and (4, 8).</li>
+                    <li>Find the gradient through (2, 3) and (6, 11).</li>
+                    <li>Find the x-intercept of y = x - 6.</li>
+                    <li>What does m represent in y = mx + c?</li>
+                    <li>What does c represent in y = mx + c?</li>
+                    <li>State the formula for gradient.</li>
+                </ol>
+            `,
+
+            answers: `
+                <ol>
+                    <li>4</li>
+                    <li>7</li>
+                    <li>7</li>
+                    <li>13</li>
+                    <li>2</li>
+                    <li>2</li>
+                    <li>6</li>
+                    <li>Gradient</li>
+                    <li>y-intercept</li>
+                    <li>Gradient = change in y / change in x</li>
+                </ol>
+            `
+        },
+
+        28: {
+            title: "Trigonometry",
+
+            lesson: `
+                <h3>Introduction</h3>
+                <p>
+                    Trigonometry is the study of relationships between the sides and angles
+                    of triangles, especially right-angled triangles.
+                </p>
+
+                <h3>The Three Main Ratios</h3>
+                <p>
+                    For an angle θ:
+                </p>
+
+                <ul>
+                    <li>sin θ = opposite / hypotenuse</li>
+                    <li>cos θ = adjacent / hypotenuse</li>
+                    <li>tan θ = opposite / adjacent</li>
+                </ul>
+
+                <p>
+                    A useful memory aid is <strong>SOH-CAH-TOA</strong>.
+                </p>
+
+                <h3>Finding an Unknown Side</h3>
+                <p>
+                    Identify the known sides and the required side.
+                    Choose the appropriate trigonometric ratio and solve.
+                </p>
+
+                <h3>Finding an Unknown Angle</h3>
+                <p>
+                    Use the inverse trigonometric functions:
+                    sin<sup>-1</sup>, cos<sup>-1</sup> or tan<sup>-1</sup>.
+                </p>
+
+                <h3>Pythagoras and Trigonometry</h3>
+                <p>
+                    Pythagoras' theorem can also be used with right-angled triangles
+                    when two sides are known.
+                </p>
+            `,
+
+            examples: `
+                <h4>Example 1</h4>
+                <p>
+                    In a right triangle, the opposite side is 6 cm and the hypotenuse is 10 cm.
+                    Find sin θ.
+                </p>
+                <p>
+                    sin θ = 6/10 = <strong>0.6</strong>.
+                </p>
+
+                <h4>Example 2</h4>
+                <p>
+                    If opposite = 8 cm and adjacent = 6 cm, find tan θ.
+                </p>
+                <p>
+                    tan θ = 8/6 = <strong>4/3</strong>.
+                </p>
+
+                <h4>Example 3</h4>
+                <p>
+                    Find the angle θ if sin θ = 0.5.
+                </p>
+                <p>
+                    θ = sin<sup>-1</sup>(0.5)
+                    = <strong>30°</strong>.
+                </p>
+
+                <h4>Example 4</h4>
+                <p>
+                    A right triangle has hypotenuse 10 cm and angle 30°.
+                    Find the opposite side.
+                </p>
+                <p>
+                    sin 30° = opposite/10.
+                </p>
+                <p>
+                    0.5 = opposite/10.
+                    <br>
+                    Opposite = <strong>5 cm</strong>.
+                </p>
+            `,
+
+            practice: `
+                <ol>
+                    <li>State the formula for sin θ.</li>
+                    <li>State the formula for cos θ.</li>
+                    <li>State the formula for tan θ.</li>
+                    <li>If opposite = 3 and hypotenuse = 5, find sin θ.</li>
+                    <li>If adjacent = 4 and hypotenuse = 5, find cos θ.</li>
+                    <li>If opposite = 6 and adjacent = 8, find tan θ.</li>
+                    <li>Find θ if sin θ = 0.5.</li>
+                    <li>Find θ if cos θ = 0.5.</li>
+                    <li>A right triangle has hypotenuse 10 cm and angle 60°. Find the opposite side.</li>
+                    <li>What does SOH-CAH-TOA help us remember?</li>
+                </ol>
+            `,
+
+            answers: `
+                <ol>
+                    <li>sin θ = opposite/hypotenuse</li>
+                    <li>cos θ = adjacent/hypotenuse</li>
+                    <li>tan θ = opposite/adjacent</li>
+                    <li>3/5 = 0.6</li>
+                    <li>4/5 = 0.8</li>
+                    <li>6/8 = 0.75</li>
+                    <li>30°</li>
+                    <li>60°</li>
+                    <li>5√3 cm</li>
+                    <li>The three basic trigonometric ratios.</li>
+                </ol>
+            `
+        },
+
+        29: {
+            title: "Bearings and Distances",
+
+            lesson: `
+                <h3>Meaning of Bearing</h3>
+                <p>
+                    A bearing is a direction measured clockwise from North.
+                    Bearings are normally written as three-figure angles.
+                </p>
+
+                <h3>Important Rules</h3>
+                <ul>
+                    <li>North is 000°.</li>
+                    <li>East is 090°.</li>
+                    <li>South is 180°.</li>
+                    <li>West is 270°.</li>
+                </ul>
+
+                <h3>Three-Figure Bearings</h3>
+                <p>
+                    Always use three digits. For example, 45° is written as 045°.
+                </p>
+
+                <h3>Back Bearing</h3>
+                <p>
+                    To find a back bearing, add 180° if the bearing is less than 180°.
+                    If it is greater than 180°, subtract 180°.
+                </p>
+
+                <h3>Bearings and Trigonometry</h3>
+                <p>
+                    Trigonometry and Pythagoras' theorem can be used to calculate distances
+                    and unknown bearings in navigation problems.
+                </p>
+            `,
+
+            examples: `
+                <h4>Example 1</h4>
+                <p>
+                    Express 60° as a three-figure bearing.
+                </p>
+                <p>
+                    Answer = <strong>060°</strong>.
+                </p>
+
+                <h4>Example 2</h4>
+                <p>
+                    Find the back bearing of 070°.
+                </p>
+                <p>
+                    070° + 180° = <strong>250°</strong>.
+                </p>
+
+                <h4>Example 3</h4>
+                <p>
+                    Find the back bearing of 240°.
+                </p>
+                <p>
+                    240° - 180° = <strong>060°</strong>.
+                </p>
+
+                <h4>Example 4</h4>
+                <p>
+                    A point is 3 km east and 4 km north of another point.
+                    Find the straight-line distance.
+                </p>
+                <p>
+                    d = √(3<sup>2</sup> + 4<sup>2</sup>)
+                    = √25
+                    = <strong>5 km</strong>.
+                </p>
+            `,
+
+            practice: `
+                <ol>
+                    <li>Write 40° as a three-figure bearing.</li>
+                    <li>Write 125° as a three-figure bearing.</li>
+                    <li>What is the bearing of East?</li>
+                    <li>What is the bearing of South?</li>
+                    <li>What is the bearing of West?</li>
+                    <li>Find the back bearing of 080°.</li>
+                    <li>Find the back bearing of 150°.</li>
+                    <li>Find the back bearing of 300°.</li>
+                    <li>A point is 6 km east and 8 km north. Find its distance from the starting point.</li>
+                    <li>From what direction are bearings measured?</li>
+                </ol>
+            `,
+
+            answers: `
+                <ol>
+                    <li>040°</li>
+                    <li>125°</li>
+                    <li>090°</li>
+                    <li>180°</li>
+                    <li>270°</li>
+                    <li>260°</li>
+                    <li>330°</li>
+                    <li>120°</li>
+                    <li>10 km</li>
+                    <li>Clockwise from North.</li>
+                </ol>
+            `
+        },
+
+        30: {
+            title: "Statistics",
+
+            lesson: `
+                <h3>Meaning of Statistics</h3>
+                <p>
+                    Statistics is the branch of mathematics concerned with collecting,
+                    organizing, presenting, analyzing and interpreting data.
+                </p>
+
+                <h3>Data</h3>
+                <p>
+                    Data are facts or observations collected for a particular purpose.
+                </p>
+
+                <h3>Types of Data</h3>
+                <ul>
+                    <li>Qualitative data describe qualities or categories.</li>
+                    <li>Quantitative data are numerical.</li>
+                    <li>Discrete data are countable.</li>
+                    <li>Continuous data can take any value within a range.</li>
+                </ul>
+
+                <h3>Presentation of Data</h3>
+                <p>
+                    Data can be presented using tables, bar charts, pie charts,
+                    histograms, line graphs and frequency distributions.
+                </p>
+
+                <h3>Frequency</h3>
+                <p>
+                    Frequency tells us how many times a particular value occurs.
+                </p>
+
+                <h3>Frequency Table</h3>
+                <p>
+                    A frequency table organizes data by listing values and their frequencies.
+                </p>
+            `,
+
+            examples: `
+                <h4>Example 1</h4>
+                <p>
+                    The data are 2, 3, 3, 4, 4, 4, 5.
+                    What is the frequency of 4?
+                </p>
+                <p>
+                    4 occurs three times.
+                    Answer = <strong>3</strong>.
+                </p>
+
+                <h4>Example 2</h4>
+                <p>
+                    Arrange 8, 3, 6, 2, 5 in ascending order.
+                </p>
+                <p>
+                    Answer = <strong>2, 3, 5, 6, 8</strong>.
+                </p>
+
+                <h4>Example 3</h4>
+                <p>
+                    Find the range of 4, 7, 9, 2 and 11.
+                </p>
+                <p>
+                    Range = highest - lowest
+                    = 11 - 2
+                    = <strong>9</strong>.
+                </p>
+
+                <h4>Example 4</h4>
+                <p>
+                    State whether the number of students in a class is discrete or continuous data.
+                </p>
+                <p>
+                    It is <strong>discrete</strong> because students are counted in whole numbers.
+                </p>
+            `,
+
+            practice: `
+                <ol>
+                    <li>Define statistics.</li>
+                    <li>What is data?</li>
+                    <li>Find the frequency of 5 in 2, 5, 3, 5, 4, 5.</li>
+                    <li>Arrange 9, 2, 7, 4, 1 in ascending order.</li>
+                    <li>Find the range of 3, 8, 12, 5 and 7.</li>
+                    <li>Is height continuous or discrete data?</li>
+                    <li>Is number of children discrete or continuous data?</li>
+                    <li>Name two methods of presenting data.</li>
+                    <li>What is frequency?</li>
+                    <li>What is a frequency table?</li>
+                </ol>
+            `,
+
+            answers: `
+                <ol>
+                    <li>The collection, organization, analysis and interpretation of data.</li>
+                    <li>Facts or observations collected for a purpose.</li>
+                    <li>3</li>
+                    <li>1, 2, 4, 7, 9</li>
+                    <li>9</li>
+                    <li>Continuous</li>
+                    <li>Discrete</li>
+                    <li>Bar chart and pie chart.</li>
+                    <li>The number of times a value occurs.</li>
+                    <li>A table showing values and their frequencies.</li>
+                </ol>
+            `
+        },
+
+        31: {
+            title: "Measures of Central Tendency",
+
+            lesson: `
+                <h3>Introduction</h3>
+                <p>
+                    Measures of central tendency provide a single value that represents
+                    the centre or typical value of a set of data.
+                </p>
+
+                <h3>Mean</h3>
+                <p>
+                    Mean = sum of all observations ÷ number of observations.
+                </p>
+
+                <h3>Median</h3>
+                <p>
+                    The median is the middle value when the data are arranged in order.
+                    If there is an even number of observations, the median is the average
+                    of the two middle values.
+                </p>
+
+                <h3>Mode</h3>
+                <p>
+                    The mode is the value that occurs most frequently.
+                </p>
+
+                <h3>Choosing a Measure</h3>
+                <p>
+                    The mean uses every observation but can be affected by extreme values.
+                    The median is less affected by extreme values.
+                    The mode is useful when the most common value is required.
+                </p>
+
+                <h3>Frequency Data</h3>
+                <p>
+                    For frequency data:
+                    Mean = Σfx / Σf.
+                </p>
+            `,
+
+            examples: `
+                <h4>Example 1: Find the mean of 4, 6, 8 and 10.</h4>
+                <p>
+                    Mean = (4 + 6 + 8 + 10) / 4
+                    = 28/4
+                    = <strong>7</strong>.
+                </p>
+
+                <h4>Example 2: Find the median of 3, 7, 5, 9 and 1.</h4>
+                <p>
+                    Arrange: 1, 3, 5, 7, 9.
+                </p>
+                <p>
+                    Middle value = <strong>5</strong>.
+                </p>
+
+                <h4>Example 3: Find the mode of 2, 3, 3, 4, 5, 3.</h4>
+                <p>
+                    3 occurs most frequently.
+                    Answer = <strong>3</strong>.
+                </p>
+
+                <h4>Example 4</h4>
+                <p>
+                    Find the median of 2, 4, 6 and 8.
+                </p>
+                <p>
+                    The middle values are 4 and 6.
+                </p>
+                <p>
+                    Median = (4 + 6)/2 = <strong>5</strong>.
+                </p>
+            `,
+
+            practice: `
+                <ol>
+                    <li>Find the mean of 2, 4, 6, 8 and 10.</li>
+                    <li>Find the mean of 5, 7, 9 and 11.</li>
+                    <li>Find the median of 1, 3, 5, 7 and 9.</li>
+                    <li>Find the median of 2, 4, 6 and 8.</li>
+                    <li>Find the mode of 3, 4, 4, 5, 6, 4.</li>
+                    <li>Find the mode of 2, 2, 3, 4, 5, 5, 5.</li>
+                    <li>What is the mean?</li>
+                    <li>What is the median?</li>
+                    <li>What is the mode?</li>
+                    <li>Which measure is represented by Σfx/Σf?</li>
+                </ol>
+            `,
+
+            answers: `
+                <ol>
+                    <li>6</li>
+                    <li>8</li>
+                    <li>5</li>
+                    <li>5</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>Sum of observations divided by number of observations.</li>
+                    <li>The middle value when data are arranged in order.</li>
+                    <li>The most frequently occurring value.</li>
+                    <li>Mean</li>
+                </ol>
+            `
+        },
+
+        32: {
+            title: "Probability",
+
+            lesson: `
+                <h3>Meaning of Probability</h3>
+                <p>
+                    Probability measures how likely an event is to occur.
+                    Probability values lie between 0 and 1 inclusive.
+                </p>
+
+                <h3>Probability Formula</h3>
+                <p>
+                    P(E) =
+                    number of favourable outcomes /
+                    total number of equally likely outcomes.
+                </p>
+
+                <h3>Impossible and Certain Events</h3>
+                <p>
+                    An impossible event has probability 0.
+                    A certain event has probability 1.
+                </p>
+
+                <h3>Complementary Events</h3>
+                <p>
+                    If E is an event, then:
+                    P(not E) = 1 - P(E).
+                </p>
+
+                <h3>Experimental Probability</h3>
+                <p>
+                    Experimental probability is based on actual results from an experiment:
+                    frequency of event / total number of trials.
+                </p>
+            `,
+
+            examples: `
+                <h4>Example 1</h4>
+                <p>
+                    A fair die is rolled. Find the probability of getting 4.
+                </p>
+                <p>
+                    There is one favourable outcome and six possible outcomes.
+                </p>
+                <p>
+                    P(4) = <strong>1/6</strong>.
+                </p>
+
+                <h4>Example 2</h4>
+                <p>
+                    Find the probability of getting an even number on a fair die.
+                </p>
+                <p>
+                    Even outcomes = 2, 4, 6.
+                </p>
+                <p>
+                    P(even) = 3/6 = <strong>1/2</strong>.
+                </p>
+
+                <h4>Example 3</h4>
+                <p>
+                    The probability of rain is 0.3. Find the probability that it will not rain.
+                </p>
+                <p>
+                    P(not rain) = 1 - 0.3
+                    = <strong>0.7</strong>.
+                </p>
+
+                <h4>Example 4</h4>
+                <p>
+                    A bag contains 3 red balls and 2 blue balls.
+                    Find the probability of selecting a red ball.
+                </p>
+                <p>
+                    Total balls = 5.
+                </p>
+                <p>
+                    P(red) = 3/5.
+                </p>
+            `,
+
+            practice: `
+                <ol>
+                    <li>What is the probability of an impossible event?</li>
+                    <li>What is the probability of a certain event?</li>
+                    <li>Find the probability of getting a 6 on a fair die.</li>
+                    <li>Find the probability of getting an odd number on a fair die.</li>
+                    <li>Find the probability of getting a head when a fair coin is tossed.</li>
+                    <li>A bag has 4 red and 6 blue balls. Find P(red).</li>
+                    <li>If P(A) = 0.4, find P(not A).</li>
+                    <li>A card is selected from numbers 1 to 10. Find P(5).</li>
+                    <li>What is the range of probability?</li>
+                    <li>State the probability formula.</li>
+                </ol>
+            `,
+
+            answers: `
+                <ol>
+                    <li>0</li>
+                    <li>1</li>
+                    <li>1/6</li>
+                    <li>1/2</li>
+                    <li>1/2</li>
+                    <li>2/5</li>
+                    <li>0.6</li>
+                    <li>1/10</li>
+                    <li>0 to 1 inclusive</li>
+                    <li>P(E) = favourable outcomes / total equally likely outcomes</li>
+                </ol>
+            `
+        },
+
+        33: {
+            title: "Permutation",
+
+            lesson: `
+                <h3>Meaning of Permutation</h3>
+                <p>
+                    A permutation is an arrangement of objects in which order matters.
+                </p>
+
+                <h3>Factorial</h3>
+                <p>
+                    Factorial notation is written as n!.
+                </p>
+
+                <p>
+                    n! = n × (n - 1) × (n - 2) × ... × 1.
+                </p>
+
+                <p>
+                    Also, 0! = 1.
+                </p>
+
+                <h3>Permutation Formula</h3>
+                <p>
+                    The number of arrangements of r objects selected from n objects is:
+                </p>
+
+                <p>
+                    nPr = n! / (n - r)!.
+                </p>
+
+                <h3>When All Objects Are Arranged</h3>
+                <p>
+                    The number of arrangements of n different objects is n!.
+                </p>
+
+                <h3>Important Point</h3>
+                <p>
+                    In permutation problems, changing the order produces a different arrangement.
+                </p>
+            `,
+
+            examples: `
+                <h4>Example 1</h4>
+                <p>
+                    Find 5!.
+                </p>
+                <p>
+                    5! = 5 × 4 × 3 × 2 × 1
+                    = <strong>120</strong>.
+                </p>
+
+                <h4>Example 2</h4>
+                <p>
+                    In how many ways can 3 different books be arranged?
+                </p>
+                <p>
+                    3! = 3 × 2 × 1
+                    = <strong>6 ways</strong>.
+                </p>
+
+                <h4>Example 3</h4>
+                <p>
+                    Find 5P2.
+                </p>
+                <p>
+                    5P2 = 5!/(5 - 2)!
+                    = 5!/3!
+                    = 5 × 4
+                    = <strong>20</strong>.
+                </p>
+
+                <h4>Example 4</h4>
+                <p>
+                    Find 6P3.
+                </p>
+                <p>
+                    6P3 = 6 × 5 × 4
+                    = <strong>120</strong>.
+                </p>
+            `,
+
+            practice: `
+                <ol>
+                    <li>Find 4!.</li>
+                    <li>Find 6!.</li>
+                    <li>Find 3!.</li>
+                    <li>Find 5P2.</li>
+                    <li>Find 6P2.</li>
+                    <li>Find 6P3.</li>
+                    <li>In how many ways can 4 different books be arranged?</li>
+                    <li>In how many ways can 5 students stand in a line?</li>
+                    <li>State the formula for nPr.</li>
+                    <li>Does order matter in permutation?</li>
+                </ol>
+            `,
+
+            answers: `
+                <ol>
+                    <li>24</li>
+                    <li>720</li>
+                    <li>6</li>
+                    <li>20</li>
+                    <li>30</li>
+                    <li>120</li>
+                    <li>24 ways</li>
+                    <li>120 ways</li>
+                    <li>nPr = n!/(n-r)!</li>
+                    <li>Yes</li>
+                </ol>
+            `
+        },
+
+        34: {
+            title: "Combination",
+
+            lesson: `
+                <h3>Meaning of Combination</h3>
+                <p>
+                    A combination is a selection of objects where order does not matter.
+                </p>
+
+                <h3>Combination Formula</h3>
+                <p>
+                    The number of ways of selecting r objects from n objects is:
+                </p>
+
+                <p>
+                    nCr = n! / [r!(n - r)!].
+                </p>
+
+                <h3>Permutation versus Combination</h3>
+                <p>
+                    In permutation, order matters.
+                    In combination, order does not matter.
+                </p>
+
+                <h3>Useful Relationship</h3>
+                <p>
+                    nCr = nPr / r!.
+                </p>
+
+                <h3>Applications</h3>
+                <p>
+                    Combinations are used when selecting teams, committees, groups
+                    or objects where the arrangement of the selected objects is irrelevant.
+                </p>
+            `,
+
+            examples: `
+                <h4>Example 1</h4>
+                <p>
+                    Find 5C2.
+                </p>
+                <p>
+                    5C2 = 5!/[2!3!]
+                    = (5 × 4)/(2 × 1)
+                    = <strong>10</strong>.
+                </p>
+
+                <h4>Example 2</h4>
+                <p>
+                    Find 6C3.
+                </p>
+                <p>
+                    6C3 = 6!/[3!3!]
+                    = 20.
+                </p>
+
+                <h4>Example 3</h4>
+                <p>
+                    From 7 students, how many ways can 2 students be selected?
+                </p>
+                <p>
+                    7C2 = 7!/[2!5!]
+                    = <strong>21 ways</strong>.
+                </p>
+
+                <h4>Example 4</h4>
+                <p>
+                    A committee of 3 is selected from 8 people.
+                    How many committees are possible?
+                </p>
+                <p>
+                    8C3 = 8!/[3!5!]
+                    = <strong>56</strong>.
+                </p>
+            `,
+
+            practice: `
+                <ol>
+                    <li>Find 4C2.</li>
+                    <li>Find 5C2.</li>
+                    <li>Find 6C2.</li>
+                    <li>Find 6C3.</li>
+                    <li>Find 7C2.</li>
+                    <li>Find 8C3.</li>
+                    <li>From 5 students, how many ways can 2 be selected?</li>
+                    <li>From 10 people, how many ways can 3 be selected?</li>
+                    <li>State the formula for nCr.</li>
+                    <li>Does order matter in combination?</li>
+                </ol>
+            `,
+
+            answers: `
+                <ol>
+                    <li>6</li>
+                    <li>10</li>
+                    <li>15</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>56</li>
+                    <li>10 ways</li>
+                    <li>120 ways</li>
+                    <li>nCr = n!/[r!(n-r)!]</li>
+                    <li>No</li>
+                </ol>
+            `
+        },
+
+        35: {
+            title: "Introduction to Matrices",
+
+            lesson: `
+                <h3>Meaning of a Matrix</h3>
+                <p>
+                    A matrix is a rectangular arrangement of numbers, symbols or expressions
+                    arranged in rows and columns.
+                </p>
+
+                <h3>Order of a Matrix</h3>
+                <p>
+                    The order of a matrix is written as:
+                    number of rows × number of columns.
+                </p>
+
+                <p>
+                    For example, a matrix with 2 rows and 3 columns has order 2 × 3.
+                </p>
+
+                <h3>Elements</h3>
+                <p>
+                    Each number in a matrix is called an element.
+                    Elements are identified by their row and column positions.
+                </p>
+
+                <h3>Types of Matrices</h3>
+                <ul>
+                    <li>Row matrix</li>
+                    <li>Column matrix</li>
+                    <li>Square matrix</li>
+                    <li>Zero matrix</li>
+                    <li>Identity matrix</li>
+                </ul>
+
+                <h3>Matrix Addition</h3>
+                <p>
+                    Two matrices can be added only when they have the same order.
+                    Corresponding elements are added.
+                </p>
+
+                <h3>Matrix Subtraction</h3>
+                <p>
+                    Two matrices of the same order can be subtracted by subtracting
+                    corresponding elements.
+                </p>
+
+                <h3>Scalar Multiplication</h3>
+                <p>
+                    To multiply a matrix by a number, multiply every element by that number.
+                </p>
+            `,
+
+            examples: `
+                <h4>Example 1</h4>
+                <p>
+                    Consider:
+                </p>
+
+                <p>
+                    A = [1  2  3]<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;[4  5  6]
+                </p>
+
+                <p>
+                    Matrix A has 2 rows and 3 columns.
+                    Therefore its order is <strong>2 × 3</strong>.
+                </p>
+
+                <h4>Example 2</h4>
+                <p>
+                    Add:
+                </p>
+
+                <p>
+                    A = [1  2]<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;[3  4]
+                </p>
+
+                <p>
+                    B = [5  6]<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;[7  8]
+                </p>
+
+                <p>
+                    A + B =
+                    [6  8]<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;[10 12]
+                </p>
+
+                <h4>Example 3</h4>
+                <p>
+                    Subtract:
+                </p>
+
+                <p>
+                    [8  7] - [3  2]
+                    = <strong>[5  5]</strong>.
+                </p>
+
+                <h4>Example 4</h4>
+                <p>
+                    Multiply the matrix [2  3; 4  5] by 3.
+                </p>
+
+                <p>
+                    3[2  3; 4  5]
+                    = <strong>[6  9; 12 15]</strong>.
+                </p>
+
+                <h4>Example 5</h4>
+                <p>
+                    State the order of:
+                </p>
+
+                <p>
+                    [2  4]<br>
+                    [6  8]<br>
+                    [1  3]
+                </p>
+
+                <p>
+                    There are 3 rows and 2 columns.
+                    Order = <strong>3 × 2</strong>.
+                </p>
+            `,
+
+            practice: `
+                <ol>
+                    <li>What is a matrix?</li>
+                    <li>Find the order of a matrix with 4 rows and 3 columns.</li>
+                    <li>Find the order of [1 2 3].</li>
+                    <li>Add [1 2] and [3 4].</li>
+                    <li>Add [2 5; 3 6] and [4 1; 7 2].</li>
+                    <li>Subtract [8 7] - [3 2].</li>
+                    <li>Multiply [2 4; 3 5] by 2.</li>
+                    <li>What is a square matrix?</li>
+                    <li>When can two matrices be added?</li>
+                    <li>What is a matrix element?</li>
+                </ol>
+            `,
+
+            answers: `
+                <ol>
+                    <li>A rectangular arrangement of numbers or expressions in rows and columns.</li>
+                    <li>4 × 3</li>
+                    <li>1 × 3</li>
+                    <li>[4 6]</li>
+                    <li>[6 6; 10 8]</li>
+                    <li>[5 5]</li>
+                    <li>[4 8; 6 10]</li>
+                    <li>A matrix having the same number of rows and columns.</li>
+                    <li>They must have the same order.</li>
+                    <li>An individual entry in a matrix.</li>
                 </ol>
             `
         }
 
     };
-
 
     if (topic === "") {
         lesson.innerHTML = `
@@ -1426,7 +1297,6 @@ function showTopic() {
     }
 
     lesson.innerHTML = `
-
         <h2>Topic ${topic}: ${selectedTopic.title}</h2>
 
         <h3>Lesson</h3>
@@ -1440,6 +1310,5 @@ function showTopic() {
 
         <h3>Answers</h3>
         ${selectedTopic.answers}
-
     `;
 }
