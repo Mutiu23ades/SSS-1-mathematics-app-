@@ -1,1 +1,16 @@
-
+{
+  "name": "sss-1-mathematics",
+  "version": "1.0.0",
+  "description": "SSS 1 Mathematics Learning App",
+  "private": true,
+  "scripts": {
+    "build": "echo Web app ready"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3",
+    "@capacitor/android": "^7.4.3"
+  }
+}
