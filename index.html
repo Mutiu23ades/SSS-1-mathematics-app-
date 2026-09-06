@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSS 1 Mathematics</title>
+</head>
 
+<body>
+
+    <h1>SSS 1 Mathematics</h1>
+
+    <p>35 Topics Mathematics Learning App</p>
+
+    <h2>Select a Topic</h2>
+
+    <select id="topicSelect" onchange="showTopic()">
+        <option value="">-- Select a Topic --</option>
+        <option value="1">1. Number Bases</option>
+        <option value="2">2. Fractions and Decimals</option>
+        <option value="3">3. Approximation and Estimation</option>
+        <option value="4">4. Standard Form</option>
+        <option value="5">5. Logarithms</option>
+        <option value="6">6. Indices</option>
+        <option value="7">7. Surds</option>
+        <option value="8">8. Sets</option>
+        <option value="9">9. Algebraic Expressions</option>
+        <option value="10">10. Factorization</option>
+        <option value="11">11. Linear Equations</option>
+        <option value="12">12. Change of Subject of Formula</option>
+        <option value="13">13. Simultaneous Equations</option>
+        <option value="14">14. Quadratic Equations</option>
+        <option value="15">15. Variation</option>
+        <option value="16">16. Sequence and Series</option>
+        <option value="17">17. Binary Operations</option>
+        <option value="18">18. Modular Arithmetic</option>
+        <option value="19">19. Plane Geometry</option>
+        <option value="20">20. Angles and Lines</option>
+        <option value="21">21. Triangles</option>
+        <option value="22">22. Quadrilaterals and Polygons</option>
+        <option value="23">23. Circles</option>
+        <option value="24">24. Mensuration of Plane Shapes</option>
+        <option value="25">25. Mensuration of Solids</option>
+        <option value="26">26. Coordinate Geometry</option>
+        <option value="27">27. Straight Lines and Graphs</option>
+        <option value="28">28. Trigonometry</option>
+        <option value="29">29. Bearings and Distances</option>
+        <option value="30">30. Statistics</option>
+        <option value="31">31. Measures of Central Tendency</option>
+        <option value="32">32. Probability</option>
+        <option value="33">33. Permutation</option>
+        <option value="34">34. Combination</option>
+        <option value="35">35. Introduction to Matrices</option>
+    </select>
+
+    <div id="lesson"></div>
+
+    <script>
+        function showTopic() {
+            const topic = document.getElementById("topicSelect").value;
+            const lesson = document.getElementById("lesson");
+
+            if (topic === "") {
+                lesson.innerHTML = "";
+                return;
+            }
+
+            lesson.innerHTML = `
+                <h2>Topic ${topic}</h2>
+                <p>Lesson content will be added here.</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>
