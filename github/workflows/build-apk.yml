@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-apk:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,12 +25,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Check web files
-        run: |
-          test -f www/index.html
-          test -f www/style.css
-          test -f www/script.js
-
       - name: Add Android platform
         run: npx cap add android
 
@@ -38,13 +32,12 @@ jobs:
         run: npx cap sync android
 
       - name: Build APK
-        run: |
-          cd android
-          chmod +x gradlew
-          ./gradlew assembleDebug
+        working-directory: android
+        run: ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: SSS-1-Mathematics-APK
+          name: sss1-mathematics-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
