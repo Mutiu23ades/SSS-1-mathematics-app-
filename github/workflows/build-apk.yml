@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-apk:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,24 +20,32 @@ jobs:
         uses: actions/setup-java@v5
         with:
           distribution: temurin
-          java-version: 21
+          java-version: 17
 
       - name: Install dependencies
         run: npm install
 
+      - name: Install Capacitor
+        run: npm install @capacitor/core @capacitor/cli @capacitor/android
+
+      - name: Initialize Capacitor
+        run: |
+          npx cap init "SSS 1 Mathematics" "com.mutiu.sss1mathematics" --web-dir=.
+
       - name: Add Android platform
         run: npx cap add android
 
-      - name: Sync Capacitor
-        run: npx cap sync android
+      - name: Copy web files to Android
+        run: npx cap copy android
 
       - name: Build APK
-        working-directory: android
-        run: ./gradlew assembleDebug
+        run: |
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: sss1-mathematics-apk
+          name: SSS-1-Mathematics-APK
           path: android/app/build/outputs/apk/debug/app-debug.apk
-          if-no-files-found: error
