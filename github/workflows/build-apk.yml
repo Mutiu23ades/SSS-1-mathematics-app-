@@ -26,11 +26,11 @@ jobs:
         run: npm install
 
       - name: Install Capacitor
-        run: npm install @capacitor/core @capacitor/cli @capacitor/android
+        run: npm install @capacitor/core@7.4.3 @capacitor/cli@7.4.3 @capacitor/android@7.4.3
 
       - name: Initialize Capacitor
         run: |
-          npx cap init "SSS 1 Mathematics" "com.mutiu.sss1mathematics" --web-dir=.
+          npx cap init "SSS 1 Mathematics" "com.sss1mathematics.app" --web-dir=.
 
       - name: Add Android platform
         run: npx cap add android
@@ -38,7 +38,7 @@ jobs:
       - name: Copy web files to Android
         run: npx cap copy android
 
-      - name: Build APK
+      - name: Build Debug APK
         run: |
           cd android
           chmod +x gradlew
