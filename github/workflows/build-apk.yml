@@ -1,4 +1,4 @@
-name: Build SSS 1 Mathematics APK
+name: Build SS1 Mathematics APK
 
 on:
   workflow_dispatch:
@@ -21,31 +21,53 @@ jobs:
         uses: actions/setup-java@v5
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: 17
+
+      - name: Create package.json
+        run: |
+          cat > package.json <<'EOF'
+          {
+            "name": "ss1-mathematics",
+            "version": "1.0.0",
+            "private": true,
+            "scripts": {
+              "build": "echo Build complete"
+            },
+            "dependencies": {
+              "@capacitor/core": "^7.4.3",
+              "@capacitor/android": "^7.4.3"
+            },
+            "devDependencies": {
+              "@capacitor/cli": "^7.4.3"
+            }
+          }
+          EOF
 
       - name: Install dependencies
         run: npm install
 
-      - name: Install Capacitor
-        run: npm install @capacitor/core@7.4.3 @capacitor/cli@7.4.3 @capacitor/android@7.4.3
-
-      - name: Initialize Capacitor
-        run: npx cap init "SSS 1 Mathematics" "com.sss1mathematics.app" --web-dir=.
+      - name: Create Capacitor configuration
+        run: |
+          cat > capacitor.config.json <<'EOF'
+          {
+            "appId": "com.ss1mathematics.app",
+            "appName": "SS 1 Mathematics",
+            "webDir": "."
+          }
+          EOF
 
       - name: Add Android platform
         run: npx cap add android
 
-      - name: Copy web files
+      - name: Copy web app
         run: npx cap copy android
 
-      - name: Build Debug APK
+      - name: Build APK
         working-directory: android
-        run: |
-          chmod +x gradlew
-          ./gradlew assembleDebug
+        run: ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: SSS-1-Mathematics-APK
+          name: SS1-Mathematics-APK
           path: android/app/build/outputs/apk/debug/app-debug.apk
