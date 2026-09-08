@@ -1,1 +1,67 @@
+name: Build SS1 Mathematics APK
 
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Android APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Install Capacitor
+        run: |
+          npm install @capacitor/core @capacitor/cli @capacitor/android
+
+      - name: Create package.json if missing
+        run: |
+          if [ ! -f package.json ]; then
+            npm init -y
+          fi
+
+      - name: Create Capacitor configuration
+        run: |
+          if [ ! -f capacitor.config.json ]; then
+            cat > capacitor.config.json <<'EOF'
+          {
+            "appId": "com.ss1mathematics.app",
+            "appName": "SS1 Mathematics",
+            "webDir": "."
+          }
+          EOF
+          fi
+
+      - name: Add Android platform
+        run: |
+          npx cap add android
+
+      - name: Copy web app to Android
+        run: |
+          npx cap copy android
+
+      - name: Build APK
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: SS1-Mathematics-APK
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
